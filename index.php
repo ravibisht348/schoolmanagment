@@ -99,6 +99,8 @@ switch (ENVIRONMENT)
  */
 	$system_path = 'system';
 	ini_set('display_errors', 0);
+
+	
 /*
  *---------------------------------------------------------------
  * APPLICATION DIRECTORY NAME
