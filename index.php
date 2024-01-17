@@ -98,7 +98,7 @@ switch (ENVIRONMENT)
  * Set the path if it is not in the same directory as this file.
  */
 	$system_path = 'system';
-
+	ini_set('display_errors', 0);
 /*
  *---------------------------------------------------------------
  * APPLICATION DIRECTORY NAME
