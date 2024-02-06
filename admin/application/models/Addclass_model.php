@@ -9,4 +9,21 @@ class Addclass_model extends CI_Model {
 		$r=$this->db->insert_id();
 		return($r);
 	}
+	public function get_class(){
+		$result=$this->db->select("*")->get('tblclass')->result();
+		return $result;
+	}
+	public function update($data){
+		$id=$data['ID'];
+		$this->db->where('ID',$id);
+		$r=$this->db->update('tblclass',$data);
+		return($r);
+
+	}
+	public function delete($id){
+		$this->db->where('ID',$id);
+		$this->db->delete('tblclass');
+		return $this->db->affected_rows();
+	}
+	
 }

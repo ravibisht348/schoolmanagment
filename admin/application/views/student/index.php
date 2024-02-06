@@ -3,7 +3,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Manage Class</h1>
+            <h1 class="m-0 text-dark">Manage Students</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -37,15 +37,17 @@
                     </div>
                     <div class="card-tools">
                       <a href="" download class="btn btn-success"><i class="fas fa-download"></i> Download PDF</a>
-                      <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Create</a>
+                      <a href="<?= base_url()?>addclass/create()" class="btn btn-primary"><i class="fas fa-plus"></i> Create</a>
                     </div>
                   </div>
                   <div class="card-body">
                     <table class="table">
                       <tr>
                         <th width="10%">S.No.</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
                         <th>Class</th>
-                        <th>Section</th>
+                        <th>DOB</th>
                         <th width="20%" class="text-center">Action</th>
                       </tr>
                       <?php
@@ -55,10 +57,12 @@ foreach ($result as $row)
 ?>
                       <tr>
                         <td><?= $row->ID?></td>
-                        <td><?= $row->ClassName?></td>
-                        <td><?= $row->Section?></td>
-                        <td class="text-center"><a class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a>
-                            <a class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</a>
+                        <td><?= $row->StudentName?></td>
+                        <td><?= $row->StudentEmail?></td>
+                        <td><?= $row->StudentClass?></td>
+                        <td><?= $row->DOB?></td>
+                        <td href="<?= base_url()?>addclass/create/<?=$row->{'ID'}?>"class="text-center"><a class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a>
+                            <a href="<?= base_url()?>addclass/delete/<?=$row->{'ID'}?>" onclick="return confirm('Are you sure you want to delete this product?')"class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</a>
                           </td>
                       </tr>
 <?php

@@ -23,7 +23,7 @@
           <div class="col-lg-12">
               <div class="card card-primary card-outline">
                   <div class="card-header">
-                    <!-- <div class="card-title">
+                    <div class="card-title">
                       <form id="searhFrm" name="searhFrm" method="get" action="">
                           <div class="input-group mb-0">
                               <input type="text" value="" class="form-control" placeholder="Search" name="q">
@@ -34,21 +34,18 @@
                               </div>
                           </div>
                       </form>
-                    </div> -->
+                    </div>
                     <div class="card-tools">
                       <a href="" download class="btn btn-success"><i class="fas fa-download"></i> Download PDF</a>
-                      <a href="" class="btn btn-primary"><i class="fas fa-plus"></i> Create</a>
+                      <a href="<?= base_url()?>addclass/create()" class="btn btn-primary"><i class="fas fa-plus"></i> Create</a>
                     </div>
                   </div>
                   <div class="card-body">
                     <table class="table">
                       <tr>
-                        <th>ID</th>
-                        <th>Name</th>
+                        <th width="10%">S.No.</th>
                         <th>Class</th>
-                        <th>Email</th>
-                        <th>DOB</th>
-
+                        <th>Section</th>
                         <th width="20%" class="text-center">Action</th>
                       </tr>
                       <?php
@@ -58,12 +55,10 @@ foreach ($result as $row)
 ?>
                       <tr>
                         <td><?= $row->ID?></td>
-                        <td><?= $row->StudentName?></td>
-                        <td><?= $row->StudentClass?></td>
-                        <td><?= $row->StudentEmail?></td>
-                        <td><?= $row->DOB?></td>
-                        <td class="text-center"><a class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a>
-                            <a class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</a>
+                        <td><?= $row->ClassName?></td>
+                        <td><?= $row->Section?></td>
+                        <td href="<?= base_url()?>addclass/create/<?=$row->{'ID'}?>"class="text-center"><a class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a>
+                            <a href="<?= base_url()?>addclass/delete/<?=$row->{'ID'}?>" onclick="return confirm('Are you sure you want to delete this product?')"class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</a>
                           </td>
                       </tr>
 <?php

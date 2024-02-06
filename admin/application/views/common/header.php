@@ -84,13 +84,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?= base_url() ?>addclass" class="nav-link">
+                <a href="<?= base_url() ?>addclass/create" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add New Class</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url() ?>manage" class="nav-link">
+                <a href="<?= base_url() ?>addclass" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Class</p>
                 </a>
@@ -108,7 +108,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?=base_url()?>Addstudent" class="nav-link">
+                <a href="<?=base_url()?>student/add" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Students</p>
                 </a>
@@ -210,4 +210,4 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-  <div class="content-wrapper">
+ 

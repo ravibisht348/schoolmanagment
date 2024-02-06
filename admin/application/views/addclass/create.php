@@ -16,7 +16,7 @@
                   <div class="card-body">
                     <h4 class="card-title" style="text-align: center;">Add Class</h4>
                    
-                    <form class="forms-sample" method="post" action="<?=base_url()?>addclass">
+                    <form class="forms-sample" method="post" action="<?=base_url()?>addclass/create">
                       
                       <div class="form-group">
                         <label for="exampleInputName1">Class Name</label>
