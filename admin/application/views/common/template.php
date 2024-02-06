@@ -3,7 +3,7 @@
 <head>
 	<?php $this->load->view('common/head'); ?>
 </head>
-<body>
+<body class="hold-transition sidebar-mini">
 	
 <?php
 $this->load->view('common/header');
