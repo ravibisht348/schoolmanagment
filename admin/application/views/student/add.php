@@ -1,5 +1,3 @@
-<div class="main-panel">
-  <div class="content-wrapper">
     <div class="page-header">
       <h3 class="page-title"> Add Students </h3>
       <nav aria-label="breadcrumb">

@@ -1,5 +1,3 @@
-
-          <div class="content-wrapper">
             <div class="page-header">
               <h3 class="page-title"> Add Class </h3>
               <nav aria-label="breadcrumb">
@@ -41,4 +39,4 @@
                 </div>
               </div>
             </div>
-          </div>
+</div>

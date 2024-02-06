@@ -66,7 +66,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="<?= base_url() ?>" class="nav-link">
+            <a href="<?= base_url() ?>dashboard" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -210,4 +210,5 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+  <div class="content-wrapper">
  
