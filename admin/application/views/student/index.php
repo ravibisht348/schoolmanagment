@@ -61,7 +61,7 @@ foreach ($result as $row)
                         <td><?= $row->StudentEmail?></td>
                         <td><?= $row->StudentClass?></td>
                         <td><?= $row->DOB?></td>
-                        <td href="<?= base_url()?>addclass/create/<?=$row->{'ID'}?>"class="text-center"><a class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a>
+                        <td class="text-center"><a href="<?= base_url()?>addclass/create/<?=$row->{'ID'}?>" class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a>
                             <a href="<?= base_url()?>addclass/delete/<?=$row->{'ID'}?>" onclick="return confirm('Are you sure you want to delete this product?')"class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</a>
                           </td>
                       </tr>
