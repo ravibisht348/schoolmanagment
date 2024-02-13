@@ -13,16 +13,16 @@
             <a class="nav-link active" href="<?= base_url() ?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url() ?>">Store</a>
+            <a class="nav-link" href="<?= base_url() ?>">About-us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url() ?>">Contact</a>
+            <a class="nav-link" href="<?= base_url() ?>">Contact-us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url() ?>student/login">Student</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?= base_url() ?>admin">Admin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url() ?>student/login">student</a>
           </li>
         </ul>
       </div>
