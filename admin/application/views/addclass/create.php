@@ -18,7 +18,7 @@
                       
                       <div class="form-group">
                         <label for="exampleInputName1">Class Name</label>
-                        <input type="text" name="ClassName" value="<?= isset($row->ClassName) ?>" class="form-control" required='true'>
+                        <input type="text" name="ClassName" value="<?= isset($row->ClassName)?$row->ClassName:'' ?>" class="form-control" required='true'>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail3">Section</label>

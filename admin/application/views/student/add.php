@@ -13,21 +13,22 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title" style="text-align: center;">Add Students</h4>
+            <br>
 
             <form class="forms-sample" method="post" enctype="multipart/form-data">
 
               <div class="form-group">
                 <label for="exampleInputName1">Student Name</label>
-                <input type="text" name="stuname" value="" class="form-control" required='true'>
+                <input type="text" name="stuname" value="<?= isset($row->StudentName)?$row->StudentName:'' ?>" class="form-control" required='true'>
               </div>
               <div class="form-group">
                 <label for="exampleInputName1">Student Email</label>
-                <input type="text" name="stuemail" value="" class="form-control" required='true'>
+                <input type="text" name="stuemail" value="<?= isset($row->StudentEmail)?$row->StudentEmail:'' ?>" class="form-control" required='true'>
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail3">Student Class</label>
                 <select name="stuclass" class="form-control" required='true'>
-                  <option value="">Select Class</option>
+                  <option value="<?= isset($row->StudentClass)?$row->StudentClass:'' ?>">Select Class</option>
 
 
 
