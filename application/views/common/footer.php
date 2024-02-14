@@ -1,141 +1,93 @@
-<footer class="bg-dark-gradient footer">
-	<div class="footer-top">
-		<div class="container">
-			<div class="footer-border-bottom pb-6 mb-5">
-				<div class="row">
-					<div class="col-lg-4 col-xl-3">
-						<h4 class="text-white">
-							Sign up to Get Latest Updates
-						</h4>
-					</div>
-					<div class="col-lg-4 col-xl-6">
-						<form class="d-flex flex-row mb-2 p-1 bg-white input-group">
-							<input type="email" class="form-control rounded-0 border-0" placeholder="you@yoursite.com">
-							<button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
-						</form>
-					</div>
-					<div class="col-lg-4 col-xl-3">
-						<div class="text-lg-end text-white">
-							<span class="h6">Call Us On</span><br>
-							<span class="h3">1-800-222-000</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-lg-3 my-4">
-					<div class="mb-4">
-						<img src="static/img/logo-light.svg" title="" alt="">
-					</div>
-					<div class="text-white-65 mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-						sed do eiusmod.</div>
-					<div class="nav footer-socila-icon">
-						<a href="#">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-2 my-4">
-					<h5 class="text-white h6 mb-4">Customer</h5>
-					<ul class="list-unstyled white-link footer-links">
-						<li>
-							<a href="#">Get Corpo</a>
-						</li>
-						<li>
-							<a href="#">Documentation</a>
-						</li>
-						<li>
-							<a href="#">Help center</a>
-						</li>
-						<li>
-							<a href="#">Pricing</a>
-						</li>
-						<li>
-							<a href="#">Contact us</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-6 col-lg-2 my-4">
-					<h5 class="text-white h6 mb-4">Product</h5>
-					<ul class="list-unstyled white-link footer-links">
-						<li>
-							<a href="#">Portfolio</a>
-						</li>
-						<li>
-							<a href="#">Blog</a>
-						</li>
-						<li>
-							<a href="#">Join our team</a>
-						</li>
-						<li>
-							<a href="#">Elements</a>
-						</li>
-						<li>
-							<a href="#">Products</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-6 col-lg-2 my-4">
-					<h5 class="text-white h6 mb-4">Company</h5>
-					<ul class="list-unstyled white-link footer-links">
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Careers</a>
-						</li>
-						<li>
-							<a href="#">Legal &amp; Security</a>
-						</li>
-						<li>
-							<a href="#">Terms of use</a>
-						</li>
-						<li>
-							<a href="#">We're hiring!</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-6 col-lg-3 my-4">
-					<h5 class="text-white h6 mb-4">Company</h5>
-					<div class="white-link">
-						<div class="d-flex pb-3">
-							<div class="avatar avatar-lg rounded">
-								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
-							</div>
-							<div class="col ps-3">
-								<small class="text-white-65">29 March 2021</small>
-								<h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample
-										Blog Post Styling</a></h6>
-							</div>
-						</div>
-						<div class="d-flex">
-							<div class="avatar avatar-lg rounded">
-								<img src="https://bootdey.com/img/Content/avatar/avatar2.png" title="" alt="">
-							</div>
-							<div class="col ps-3">
-								<small class="text-white-65">29 March 2021</small>
-								<h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample
-										Blog Post Styling</a></h6>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-bottom footer-border-top light py-3">
-		<div class="container text-center">
-			<p class="m-0">© 2021 copyright <a href="#" class="text-reset text-white">Schoolmanagement.com</a></p>
-		</div>
-	</div>
-</footer>
-<script type="text/javascript" src="<?php base_url() ?>assets/js/bootstrap.js"></script>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Photo Gallery</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Newsletter</h3>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+		 <!-- Back to Top -->
+		 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=base_url()?>assets/lib/wow/wow.min.js"></script>
+    <script src="<?=base_url()?>assets/lib/easing/easing.min.js"></script>
+    <script src="<?=base_url()?>assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="<?=base_url()?>assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="<?=base_url()?>assets/js/main.js"></script>
