@@ -132,13 +132,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?= base_url() ?>notice" class="nav-link">
+                <a href="<?= base_url() ?>notice/add" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>View Notice</p>
+                  <p>Add Notice</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url() ?>notice/add" class="nav-link">
+                <a href="<?= base_url() ?>notice" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Notice</p>
                 </a>
@@ -157,13 +157,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url() ?>publicnotice/add" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Public Notice</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url() ?>publicnotice" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Public Notice</p>
                 </a>

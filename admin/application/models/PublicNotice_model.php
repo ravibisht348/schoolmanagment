@@ -1,15 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Notice_model extends CI_Model {
+class PublicNotice_model extends CI_Model {
 	
-	 function get_notice(){
-		$result=$this->db->select("*")->get('tblnotice')->result();
+	 function get_publicnotice(){
+		$result=$this->db->select("*")->get('tblpublicnotice')->result();
 		return $result;
 	}
 	 function save($data)
 	{
-		$this->db->insert('tblnotice',$data);
+		$this->db->insert('tblpublicnotice',$data);
 		$r=$this->db->insert_id();
 		return($r);
 	}
@@ -17,13 +17,13 @@ class Notice_model extends CI_Model {
 	 function update($data){
 		$id=$data['ID'];
 		$this->db->where('ID',$id);
-		$r=$this->db->update('tblnotice',$data);
+		$r=$this->db->update('tblpublicnotice',$data);
 		return($r);
 
 	}
 	 function delete($id){
 		$this->db->where('ID',$id);
-		$this->db->delete('tblnotice');
+		$this->db->delete('tblpublicnotice');
 		return $this->db->affected_rows();
 	}
 	

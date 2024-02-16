@@ -1,23 +1,23 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Notice extends CI_Controller
+class PublicNotice extends CI_Controller
 {
 
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Notice_model');
+		$this->load->model('PublicNotice_model');
 	}
 
 	public function index()
 	{
 		$data = array();
-		$result = $this->Notice_model->get_notice();
+		$result = $this->PublicNotice_model->get_publicnotice();
 		$data['result'] = $result;
 
 
-		$data['main_content'] = 'notice/index';
+		$data['main_content'] = 'publicnotice/index';
 
 		$this->load->view('common/template', $data);
 	}
@@ -32,7 +32,7 @@ class Notice extends CI_Controller
 
 			$data['mode'] = 'Edit';
 			$this->db->where('ID', $data['id']);
-			$data['row'] = $this->db->get('tblnotice')->row();
+			$data['row'] = $this->db->get('tblpublicnotice')->row();
 		}
 
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -41,10 +41,10 @@ class Notice extends CI_Controller
 				$db_data[$key] = $value;
 			}
 			if (strlen($db_data['ID']) > 0)
-				$r = $this->Notice_model->update($db_data);
+				$r = $this->PublicNotice_model->update($db_data);
 
 			else
-				$r = $this->Notice_model->save($db_data);
+				$r = $this->PublicNotice_model->save($db_data);
 
 			if ($r > 0) {
 				$data['message'] = 'Data Saved';
@@ -57,7 +57,7 @@ class Notice extends CI_Controller
 			}
 		}
 
-		$data['main_content'] = 'notice/add';
+		$data['main_content'] = 'publicnotice/add';
 		$this->load->view('common/template', $data);
 	}
 	// delete
@@ -66,7 +66,7 @@ class Notice extends CI_Controller
 		$id = $this->uri->segment(3);
 
 		if (strlen($id) > 0) {
-			$result = $this->Notice_model->delete($id);
+			$result = $this->PublicNotice_model->delete($id);
 
 			if ($result > 0) {
 			?>
@@ -89,6 +89,6 @@ class Notice extends CI_Controller
 <?php
 		}
 
-		redirect('<?= base_url() ?>notice');
+		redirect('<?= base_url() ?>publicnotice');
 	}
 }

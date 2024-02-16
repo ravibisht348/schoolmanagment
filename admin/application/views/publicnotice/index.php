@@ -3,7 +3,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Manage Notice</h1>
+            <h1 class="m-0 text-dark">Manage Public Notice</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -45,8 +45,6 @@
                       <tr>
                         <th>S.No.</th>
                         <th>Notice Title</th>
-                        <th>Notice Message</th>
-                        <th>Class</th>
                         <th>Notice Date</th>
                         <th class="text-center">Action</th>
                       </tr>
@@ -58,10 +56,8 @@ foreach ($result as $row)
                       <tr>
                         <td><?= $row->ID?></td>
                         <td><?= $row->NoticeTitle?></td>
-                        <td><?= $row->NoticeMsg ?></td>
-                        <td><?= $row->ClassId?></td>
                         <td><?= $row->CreationDate?></td>
-                        <td><a href="<?= base_url()?>notice/add/<?=$row->{'ID'}?>"class="text-center"   class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a> 
+                        <td class="text-center"><a href="<?= base_url()?>notice/add/<?=$row->{'ID'}?>"class="text-center"   class="btn btn-primary btn-sm"><i class="far fa-edit"></i> Edit</a> 
                             <a href="<?= base_url()?>notice/delete/<?=$row->{'ID'}?>" onclick="return confirm('Are you sure you want to delete this product?')"class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i> Delete</a>
                           </td>
                       </tr>

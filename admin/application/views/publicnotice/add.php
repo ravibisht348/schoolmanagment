@@ -1,9 +1,9 @@
     <div class="page-header">
-      <h3 class="page-title"> Add Notice </h3>
+      <h3 class="page-title"> Add Public Notice </h3>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-          <li class="breadcrumb-item active" aria-current="page"> Add Notice</li>
+          <li class="breadcrumb-item active" aria-current="page"> Add Public Notice</li>
         </ol>
       </nav>
     </div>
