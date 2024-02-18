@@ -183,23 +183,16 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url() ?>pages" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Home</p>
+                  <p>View Pages</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url() ?>pages/add" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>About</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Product</p>
+                  <p>Add Pages</p>
                 </a>
               </li>
             </ul>
