@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
                     <a href="<?= base_url() ?> " class="nav-item nav-link active">Home</a>
-                    <a href="<?= base_url() ?>about" class="nav-item nav-link">About</a>
+                    <a href="<?= base_url() ?>about" class="nav-item nav-link">About Us</a>
                     <a href="<?= base_url() ?>team" class="nav-item nav-link">Team</a>
                     <a href="<?= base_url() ?>notice" class="nav-item nav-link">Notice</a>
                     <a href="<?= base_url() ?>contact" class="nav-item nav-link">Contact Us</a>
