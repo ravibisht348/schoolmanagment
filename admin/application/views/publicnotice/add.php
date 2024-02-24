@@ -16,22 +16,13 @@
 
               <div class="form-group">
                 <label for="exampleInputName1">Notice Title</label>
-                <input type="text" name="stuname" value="" class="form-control" required='true'>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail3">Notice For</label>
-                <select name="stuclass" class="form-control" required='true'>
-                  <option value="">Select Class</option>
-
-
-
-                </select>
+                <input type="text" name="NoticeTitle" value="" class="form-control" required='true'>
               </div>
               <div class="form-group">
                 <label for="exampleInputName1">Notice Message</label>
-                <textarea name="address" class="form-control" required='true'></textarea>
+                <textarea name="NoticeMessage" class="form-control" required='true'></textarea>
               </div>
-              <button type="submit" class="btn btn-primary mr-2" name="submit">Add</button>
+              <button type="submit" class="btn btn-primary mr-2" >Add</button>
 
             </form>
           </div>
